@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('articulos','App\Http\Controllers\ArticulosController');
+Route::resource('articulos', 'App\Http\Controllers\ArticuloController');
 
 Route::middleware([
     'auth:sanctum',
